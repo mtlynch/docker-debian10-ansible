@@ -1,4 +1,4 @@
-FROM debian:buster-20200908
+FROM debian:buster-20200908-slim
 LABEL maintainer="Michael Lynch"
 
 ARG ANSIBLE_VERSION="2.9.13"
