@@ -1,6 +1,6 @@
 # Debian 10 (Buster) Ansible Test Image
 
-[![CircleCI](https://circleci.com/gh/mtlynch/docker-debian10-ansible.svg?style=svg)](https://circleci.com/gh/mtlynch/docker-debian10-ansible) [![Docker Automated build](https://img.shields.io/docker/automated/mtlynch/docker-debian10-ansible.svg?maxAge=2592000)](https://hub.docker.com/r/mtlynch/docker-debian10-ansible/)
+[![CircleCI](https://circleci.com/gh/mtlynch/docker-debian10-ansible.svg?style=svg)](https://circleci.com/gh/mtlynch/docker-debian10-ansible) [![Docker Automated build](https://img.shields.io/docker/automated/mtlynch/debian10-ansible.svg?maxAge=2592000)](https://hub.docker.com/r/mtlynch/debian10-ansible/)
 
 Debian 10 (Buster) Docker container for Ansible playbook and role testing.
 
