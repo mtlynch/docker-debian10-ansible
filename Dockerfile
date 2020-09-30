@@ -1,9 +1,9 @@
-FROM debian:buster
-LABEL maintainer="Jeff Geerling"
+FROM debian:buster-20200908
+LABEL maintainer="Michael Lynch"
+
+ARG ANSIBLE_VERSION="2.9.13"
 
 ENV DEBIAN_FRONTEND noninteractive
-
-ENV pip_packages "ansible cryptography"
 
 # Install dependencies.
 RUN apt-get update \
@@ -16,7 +16,7 @@ RUN apt-get update \
     && apt-get clean
 
 # Install Ansible via pip.
-RUN pip3 install $pip_packages
+RUN pip3 install cryptography "ansible==${ANSIBLE_VERSION}"
 
 COPY initctl_faker .
 RUN chmod +x initctl_faker && rm -fr /sbin/initctl && ln -s /initctl_faker /sbin/initctl
